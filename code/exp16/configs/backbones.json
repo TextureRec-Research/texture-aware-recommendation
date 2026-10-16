@@ -1,0 +1,22 @@
+{
+  "seed":20260904,
+  "dim":64,
+  "learning_rates":[0.001,0.0003],
+  "maximum_epochs":50,
+  "patience":5,
+  "validation_every_epochs":5,
+  "bpr_batch_size":4096,
+  "lightgcn_batch_size":8192,
+  "sasrec_batch_size":256,
+  "lightgcn_layers":3,
+  "sasrec_layers":2,
+  "sasrec_heads":2,
+  "sasrec_maxlen":50,
+  "sasrec_dropout":0.2,
+  "smore_batch_size":200000,
+  "smore_maximum_epochs":20,
+  "regularization":0.000001,
+  "evaluation_batch_size":256,
+  "negative_sampling":"uniform over full catalog, reject all user train positives; never use validation/test as negatives-exclusion oracle",
+  "selection":"best full validation NDCG@10, no test access before selection lock"
+}
